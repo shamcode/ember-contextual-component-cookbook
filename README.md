@@ -1,7 +1,6 @@
 # ember-contextual-component-cookbook
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+https://shamcode.github.io/ember-contextual-component-cookbook/
 
 ## Prerequisites
 
