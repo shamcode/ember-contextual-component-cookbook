@@ -23,3 +23,22 @@ bower.json.ember-try
 package.json.ember-try
 
 .idea
+
+# gh-pages
+/app
+/config
+/dia
+/dist
+/public
+/tests
+/vendor
+.editorconfig
+.ember-cli
+.eslintrc.js
+.travis.yml
+.watchmanconfig
+bower.json
+ember-cli-build.js
+packages.json
+README.md
+testem.js
