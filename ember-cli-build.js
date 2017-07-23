@@ -13,7 +13,7 @@ module.exports = function(defaults) {
       end: /{{\/code-snippet}}/,
     },
     fingerprint: {
-      prepend: 'https://shamcode.github.io/ember-contextual-component-cookbook/ember-contextual-component-cookbook/'
+      prepend: 'https://shamcode.github.io/ember-contextual-component-cookbook/'
     }
   });
 

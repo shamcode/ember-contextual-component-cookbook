@@ -5,7 +5,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-contextual-component-cookbook',
     environment,
-    rootURL: '/ember-contextual-component-cookbook/',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -48,7 +48,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.location = 'hash';
   }
 
   ENV.APP.menuItems = [
