@@ -52,11 +52,18 @@ hr {
   border-right: none;
   border-top: none;
   margin: 1.5em 0;
+
 }
+.github-fork-ribbon:before {
+  background-color: #dd6a58;
+}
+
 
 @media screen and (min-width: 53.75em) {
   main {
     display: flex;
   }
 }
+
+
 
