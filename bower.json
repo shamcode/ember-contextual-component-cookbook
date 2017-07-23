@@ -1,0 +1,6 @@
+{
+  "name": "ember-contextual-component-cookbook",
+  "dependencies": {
+    "highlightjs": "^9.12.0"
+  }
+}

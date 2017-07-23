@@ -1,0 +1,62 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #FDFDFD;
+  margin: 0;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: block;
+}
+
+
+header {
+  background: #dd6a58;
+  background-size: cover;
+  color: #fff;
+  padding: 1em 0;
+  font-family: 'Source Sans Pro';
+
+  h3 {
+    text-align: center;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    line-height: 1.2;
+    font-size: 1.5em;
+  }
+}
+
+main {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+
+hr {
+  border-bottom: 1px solid #F8E7CF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+@media screen and (min-width: 53.75em) {
+  main {
+    display: flex;
+  }
+}
+

@@ -24,6 +24,10 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['ember-highlight-code']= {
+    style: 'hopscotch'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -46,6 +50,11 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
+
+  ENV.APP.menuItems = [
+    { link: 'what-is-it', label: 'What is it?' },
+    { link: 'extending-component', label: 'Extending component' }
+  ];
 
   return ENV;
 };

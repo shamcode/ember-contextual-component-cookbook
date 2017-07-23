@@ -1,5 +1,14 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<header>
+  <h3>
+    Ember contextual component cookbook
+  </h3>
+</header>
 
-{{outlet}}
+<main>
+  {{menu-sidebar items=model.menuItems}}
+  {{outlet}}
+</main>
+
+<footer>
+
+</footer>
