@@ -49,7 +49,6 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/ember-contextual-component-cookbook/';
   }
 
   ENV.APP.menuItems = [
