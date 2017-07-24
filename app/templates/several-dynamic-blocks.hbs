@@ -1,0 +1,106 @@
+{{#content-article as |article|}}
+  {{#article.title}}
+    Several dynamic blocks
+  {{/article.title}}
+
+  {{#article.content}}
+    <h3>
+      Problem
+    </h3>
+    <p>Component has several blocks with dynamic content</p>
+    <p>
+      Component:
+    </p>
+    <p>
+      {{higlight-code
+        name='modal-window.hbs'
+        code=model.modal}}
+    </p>
+
+    <h3>Solution</h3>
+    <p>Add <code>yield</code> with <code>hash</code> helper and sub-component for dynamic blocks</p>
+
+    <p>
+      Base modal component:
+    </p>
+    <p>
+      {{higlight-code
+        name='modal-window.hbs'
+        code=model.modal-solution}}
+    </p>
+
+    <p>Modal header component:</p>
+    <p>
+      {{higlight-code
+        name='modal-header.hbs'
+        code=model.modal-header-hbs-solution}}
+    </p>
+    <p>
+      {{higlight-code
+        name='modal-header.js'
+        code=model.modal-header-js-solution}}
+    </p>
+
+    <p>Modal content component:</p>
+    <p>
+      {{higlight-code
+        name='modal-content.hbs'
+        code=model.modal-content-hbs-solution}}
+    </p>
+    <p>
+      {{higlight-code
+        name='modal-content.js'
+        code=model.modal-content-js-solution}}
+    </p>
+
+    <p>
+      Component using:
+    </p>
+    <p>
+      {{higlight-code
+        name='page.hbs'
+        code=model.modal-using-solution}}
+    </p>
+
+    <p>For common case you can create helpful dummy-component:</p>
+    <p>
+      {{higlight-code
+        name='yield-block.hbs'
+        code=model.yield-block-hbs}}
+    </p>
+    <p>
+      {{higlight-code
+        name='yield-block.js'
+        code=model.yield-block-js}}
+    </p>
+
+    <h3>Graphic schema</h3>
+    <p>
+      <a target="_blank" href="/assets/images/several-dynamic-blocks.png">
+        <img src="/assets/images/several-dynamic-blocks-small.png">
+      </a>
+    </p>
+
+    <h3>OOP analog</h3>
+    <p>
+      Problem:
+    </p>
+    <p>
+      {{higlight-code
+        name='modal-window.js'
+        code=model.oop-problem}}
+    </p>
+
+    <p>
+      Solution (split method):
+    </p>
+    <p>
+      {{higlight-code
+        name='modal-window.js'
+        code=model.oop-solution}}
+    </p>
+    <p></p>
+  {{/article.content}}
+{{/content-article}}
+
+{{outlet}}

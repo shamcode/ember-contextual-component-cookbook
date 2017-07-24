@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('what-is-it', {path: '/'});
   this.route('extending-component');
+  this.route('several-dynamic-blocks');
 });
 
 export default Router;
