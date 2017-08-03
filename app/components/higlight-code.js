@@ -1,5 +1,6 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
+import { oneWay } from '@ember/object/computed';
 import { classify } from '@ember/string';
 
 export default Component.extend({
@@ -14,5 +15,17 @@ export default Component.extend({
   }),
   languageForHbsExtension: computed(function() {
     return 'Handlebars';
-  })
+  }),
+  lines: computed('code', function() {
+    return this
+      .get('code')
+      .trim()
+      .split('\n')
+      .map((_, i) => i + 1)
+    ;
+  }),
+  linesString: computed('lines', function() {
+    return this.get('lines').join('\n');
+  }),
+  linesCount: oneWay('lines.length')
 });

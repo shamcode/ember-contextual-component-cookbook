@@ -1,3 +1,6 @@
+* {
+  box-sizing: inherit;
+}
 article {
   padding: 3em 0;
 
@@ -39,31 +42,44 @@ article {
 
   .highlight {
     width: 100%;
-    .ember-highlight-code {
-      border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    table {
+      width: 100%;
+      table-layout: auto;
+      tr {
+        vertical-align: middle;
+        border: none;
+        td {
+          padding: 5px;
+        }
+      }
     }
+    background-color: #322931;
     .file-name {
+      text-align: left;
       border-radius: 3px 3px 0 0;
-      display: block;
       background-color: #1e1e1e;
       color: lightgrey;
-      margin: 0;
-      margin-bottom: -1.1em;
+      margin: 0 0 -1.1em;
       padding: 5px 10px;
       font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
       font-size: 0.8em;
       line-height: 1.5em;
     }
-  }
-
-  pre.ember-highlight-code span.line-number {
-    position: absolute;
-    width: 47px;
-    text-align: right;
-    border-right: 1px solid #ddd;
-    margin: 0px 0px 0px -55px;
-    padding: 0px 5px 0px 0px;
-    color: #aaa;
+    .hljs {
+      padding: 0;
+      margin: 0;
+    }
+    .line-number {
+      width: 1em;
+      text-align: center;
+      border-right: 1px solid #ddd;
+      color: #aaa;
+      user-select: none;
+      pre {
+        margin: 0;
+      }
+    }
   }
 }
 
