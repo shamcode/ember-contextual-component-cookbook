@@ -22,7 +22,8 @@ test('Js render', function(assert) {
     content,
     [
       'foo.js',
-      '1 function() { return 42; }'
+      '1',
+      'function() { return 42; }'
     ]
   );
 });
@@ -48,9 +49,12 @@ test('Hbs render', function(assert) {
     content,
     [
       'foo.hbs',
-      '1 {{#if foo}}',
-      '2   {{bar}}',
-      '3 {{/if}}'
+      '1',
+      '2',
+      '3',
+      '{{#if foo}}',
+      '{{bar}}',
+      '{{/if}}'
     ]
   );
 });
