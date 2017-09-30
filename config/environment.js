@@ -54,7 +54,8 @@ module.exports = function(environment) {
   ENV.APP.menuItems = [
     { link: 'what-is-it', label: 'What is it?' },
     { link: 'extending-component', label: 'Extending component' },
-    { link: 'several-dynamic-blocks', label: 'Several dynamic blocks'}
+    { link: 'several-dynamic-blocks', label: 'Several dynamic blocks'},
+    { link: 'component-inverse-templates', label: 'Component inverse templates'}
   ];
 
   return ENV;

@@ -1,0 +1,50 @@
+{{#content-article as |article|}}
+  {{#article.title}}
+    Component inverse templates
+  {{/article.title}}
+
+  {{#article.content}}
+    <h3>
+      Problem
+    </h3>
+    <p>Component has <code>if</code>/<code>else</code> with <code>yield</code>'s</p>
+    <p>
+      Component:
+    </p>
+    <p>
+      {{higlight-code
+        name='when-loaded.hbs'
+        code=model.when-loaded}}
+    </p>
+    <p>
+      Component using:
+    </p>
+    <p>
+      {{higlight-code
+        name='application.hbs'
+        code=model.when-loaded-usage}}
+    </p>
+
+    <h3>Solution</h3>
+    <p>Use <code>to="inverse"</code> for else's <code>yield</code></p>
+
+    <p>
+      Component:
+    </p>
+    <p>
+      {{higlight-code
+        name='when-loaded.hbs'
+        code=model.when-loaded-solution}}
+    </p>
+    <p>
+      Component using:
+    </p>
+    <p>
+      {{higlight-code
+        name='application.hbs'
+        code=model.when-loaded-usage-solution}}
+    </p>
+  {{/article.content}}
+{{/content-article}}
+
+{{outlet}}

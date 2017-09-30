@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('what-is-it', {path: '/'});
   this.route('extending-component');
   this.route('several-dynamic-blocks');
+  this.route('component-inverse-templates');
 });
 
 export default Router;
