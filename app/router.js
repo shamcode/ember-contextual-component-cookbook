@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('extending-component');
   this.route('several-dynamic-blocks');
   this.route('component-inverse-templates');
+  this.route('default-block');
 });
 
 export default Router;
