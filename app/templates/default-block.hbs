@@ -1,1 +1,99 @@
+{{#content-article as |article|}}
+  {{#article.title}}
+    Default block content
+  {{/article.title}}
+
+  {{#article.content}}
+    <h3>
+      Problem
+    </h3>
+    <p>Component has <i>optional</i> dynamic content or default content</p>
+    <p>
+      Component:
+    </p>
+    <p>
+      {{higlight-code
+        name='client-info.hbs'
+        code=model.client-info}}
+    </p>
+
+    <h3>Solution</h3>
+    <p>Combine <code>yield</code> with <code>to="inverse"</code> and callback on <code>init</code> child-component</p>
+
+    <p>
+      Create components <code>\{{if-used-block}}</code>, <code>\{{yield-block}}</code> and helper <code>\{{wrap-component-into-hash}}</code>:
+    </p>
+    <p>
+      {{higlight-code
+        name='if-used-block.hbs'
+        code=model.if-used-block-template}}
+    </p>
+    <p>
+      {{higlight-code
+        name='if-used-block.js'
+        code=model.if-used-block-component}}
+    </p>
+    <p>
+      {{higlight-code
+        name='yield-block.hbs'
+        code=model.yield-block-template}}
+    </p>
+    <p>
+      {{higlight-code
+        name='yield-block.js'
+        code=model.yield-block-component}}
+    </p>
+    <p>
+      {{higlight-code
+        name='wrap-component-into-hash.js'
+        code=model.wrap-component-into-hash-helper}}
+    </p>
+
+    <p>Use <code>\{{if-used-block}}</code> component:</p>
+    <p>
+      {{higlight-code
+        name='client-info.hbs'
+        code=model.client-info-solution}}
+    </p>
+
+    <p>Now you can override <code>id</code> block content if need:</p>
+    <p>
+      {{higlight-code
+        name='personal-client-info.hbs'
+        code=model.personal-client-info}}
+    </p>
+    <p>
+      {{higlight-code
+        name='legal-client-info.hbs'
+        code=model.legal-client-info}}
+    </p>
+
+    <p>Or not:</p>
+    <p>
+      {{higlight-code
+        name='personal-client-info-test.js'
+        code=model.default-client-info-test}}
+    </p>
+
+    <h3>OOP analog</h3>
+    <p>
+      Problem:
+    </p>
+    <p>
+      {{higlight-code
+        name='client-info.js'
+        code=model.oop-problem}}
+    </p>
+
+    <p>
+      Solution (override method):
+    </p>
+    <p>
+      {{higlight-code
+        name='client-info.js'
+        code=model.oop-solution}}
+    </p>
+  {{/article.content}}
+{{/content-article}}
+
 {{outlet}}

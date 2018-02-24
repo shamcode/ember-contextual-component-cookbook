@@ -18,7 +18,7 @@ export default Component.extend({
   }),
   lines: computed('code', function() {
     return this
-      .get('code')
+      .getWithDefault('code', '')
       .trim()
       .split('\n')
       .map((_, i) => i + 1)

@@ -55,7 +55,8 @@ module.exports = function(environment) {
     { link: 'what-is-it', label: 'What is it?' },
     { link: 'extending-component', label: 'Extending component' },
     { link: 'several-dynamic-blocks', label: 'Several dynamic blocks'},
-    { link: 'component-inverse-templates', label: 'Component inverse templates'}
+    { link: 'component-inverse-templates', label: 'Component inverse templates'},
+    { link: 'default-block', label: 'Default block content'}
   ];
 
   return ENV;

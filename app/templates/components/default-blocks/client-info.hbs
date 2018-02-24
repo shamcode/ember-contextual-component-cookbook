@@ -1,0 +1,14 @@
+<dl>
+  <dt>Name:</dt>
+  <dd>{{client.name}}</dd>
+  <dt>ID:</dt>
+  <dd>
+    {{#if-used-block 'id' as |slot|}}
+      {{yield slot}}
+    {{else}}
+      <span class="danger">
+        Hasn't unique ID!
+      </span>
+    {{/if-used-block}}
+  </dd>
+</dl>

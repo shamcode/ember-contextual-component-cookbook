@@ -1,0 +1,11 @@
+{{yield (wrap-component-into-hash
+  blockName
+  (component "yield-block"
+    register=(action 'register')
+    unregister=(action 'unregister')
+  )
+)}}
+
+{{#unless blockUsed}}
+  {{yield to="inverse"}}
+{{/unless}}
